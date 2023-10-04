@@ -1,13 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
-
+import { ChakraBaseProvider } from "@chakra-ui/react";
+import { FiberContainer } from "./FiberContainer";
+import { Textarea } from "@chakra-ui/react";
+import { Header } from "./Header.jsx";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>Good Morning</h1>
+      <Header />
+      <div className="App">
+        <FiberContainer />
+      </div>
     </>
   );
 }
