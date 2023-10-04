@@ -2,7 +2,7 @@ from flask import Flask, jsonify, make_response, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_cors import CORS
-from flask import Flask, render_template
+from flask import Flask
 from flask_jwt_extended import JWTManager
 
 
@@ -31,17 +31,17 @@ CORS(app)
 # Define a route for the root URL, returning a welcome message
 @app.route('/')
 def index():
-    return render_template('home.html')
+    return 'Welcome to the Flask API!'
 
 # Define a route for the about page, rendering the 'about.html' template
 @app.route('/about', methods=['GET'])
 def about():
-    return render_template('about.html')
+    return 'This is the about page!'
 
 # Define a route for the contact page, rendering the 'contact.html' template
 @app.route('/contact', methods=['GET'])
 def contact():
-    return render_template('contact.html')
+    return 'This is the contact page!'
 
 # Run the Flask app in debug mode if the script is executed directly
 if __name__ == '__main__':

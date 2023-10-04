@@ -1,4 +1,3 @@
-// src/components/Login.js
 
 import React, { useState } from 'react';
 import { login } from '../auth/auth';
