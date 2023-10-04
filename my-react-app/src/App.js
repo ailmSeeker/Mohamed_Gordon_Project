@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Routes from './Routes';
 
 function App() {
@@ -24,9 +24,9 @@ function App() {
         </header>
 
         {/* Define your routes using the Routes component */}
-        <Switch>
+        <Route>
           <Route path="/" exact component={Routes} />
-        </Switch>
+        </Route>
       </div>
     </Router>
   );
