@@ -25,7 +25,8 @@ export function Scene() {
       />
 
       <Trees
-        position={[0, 0, 4]}
+        ref={refTrees}
+        position={[0, 0, 0]}
         colors={[
           new Color("#4a8d7e").convertLinearToSRGB(),
           new Color("#377f6a").convertLinearToSRGB(),

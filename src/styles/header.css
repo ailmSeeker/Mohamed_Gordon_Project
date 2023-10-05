@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.navbar a {
+  font-size: 22px;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
