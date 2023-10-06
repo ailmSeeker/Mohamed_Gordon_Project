@@ -3,9 +3,15 @@ import { Container, Image, Box, Heading } from "@chakra-ui/react";
 
 export function MainBody() {
   return (
-    <Container m="0 40px " width="95vw" height="80vh" display="flex">
+    <div
+      style={{
+        margin: "0 40px",
+        width: "95vw",
+        height: "100vh",
+        display: "flex",
+      }}
+    >
       <Box
-        boxSize="sm"
         bgColor="#F9FFD1"
         justifyContent="center"
         alignItems="center"
@@ -22,6 +28,6 @@ export function MainBody() {
       <div style={{ width: "50%", height: "30" }}>
         <FiberContainer />
       </div>
-    </Container>
+    </div>
   );
 }
