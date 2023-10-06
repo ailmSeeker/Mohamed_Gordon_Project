@@ -1,5 +1,5 @@
 import { UnorderedList, ListItem } from "@chakra-ui/react";
-import "../sryles/header.css";
+import "../styles/header.css";
 
 export function Header() {
   return (
