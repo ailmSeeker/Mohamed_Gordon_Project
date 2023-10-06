@@ -1,0 +1,58 @@
+.boxy {
+  display: flex;
+  width: 100vw;
+  padding: 40px;
+}
+
+.imagy {
+  width: 100%;
+  border-radius: 12px;
+  height: 214px;
+}
+.hold {
+  max-width: 300px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #bacdd8;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 10px;
+
+  width: 80%;
+  margin-top: 12px;
+}
+
+p {
+  font-size: 14px;
+  text-align: left;
+  color: #7f8c9b;
+  line-height: 150%;
+  width: 80%;
+  padding-bottom: 10px;
+}
+
+button {
+  border: none;
+  padding: 12px 12px;
+
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;
+
+  display: block;
+
+  cursor: pointer;
+}
+
+.card__details {
+  padding: 16px 8px 8px 8px;
+}

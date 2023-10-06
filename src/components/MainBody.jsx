@@ -1,6 +1,4 @@
 import { FiberContainer } from "./FiberContainer";
-import Lottie from "lottie-react";
-import tree_anime from "../../public/tree_anime.json";
 import { Container, Image, Box, Heading } from "@chakra-ui/react";
 
 export function MainBody() {
@@ -16,10 +14,9 @@ export function MainBody() {
         width="50%"
       >
         <Heading fontSize="32px" width="100">
-          How are you
+          Chaning The World For The Better
         </Heading>
-        <Heading fontSize="18px">More stuff</Heading>
-        <Lottie style={{ height: "40px" }} animationData={tree_anime} />
+        <Heading fontSize="18px">One Tree At A Time</Heading>
       </Box>
 
       <div style={{ width: "50%", height: "30" }}>
