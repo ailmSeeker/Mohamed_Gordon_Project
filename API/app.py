@@ -3,9 +3,11 @@
 from flask import Flask, jsonify, request,make_response
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_cors import CORS
 
 from models import db, Site
 app = Flask(__name__)
+cors = CORS(app)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///earth.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -17,12 +19,12 @@ db.init_app(app)
 
 def seed():
     test = Site(
-        id = 1,
-        tag_line = 'The world needs more green', 
-        header = 'this is a header',
-        card1 = 'this is a card', 
-        card2 = 'this is another card',
-        card3 = 'this is third card',
+        id = 3,
+        tag_line = 'Tree by Tree', 
+        header =  'Changing The World For The Better',
+        card1 = 'Environmental Degradation and Climate Change',
+        card2 = 'Human Health and Well-being',
+        card3 = 'Biodiversity Loss',
     )
 
     db.session.add(test)
@@ -35,7 +37,7 @@ def index():
 
 @app.route('/stuff')
 def tag_line():
-    tag_line_get = db.session.execute(db.select(Site).filter_by(id=1)).scalar_one()
+    tag_line_get = db.session.execute(db.select(Site).filter_by(id=3)).scalar_one()
     
     tag_dict = tag_line_get.to_dict()
     

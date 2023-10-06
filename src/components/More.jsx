@@ -22,9 +22,7 @@ export function More() {
           <Lottie className="imagy" animationData={fire} />
 
           <div className="card__details">
-            <div className="name">
-              Environmental Degradation and Climate Change
-            </div>
+            <div className="name">{messages.card1}</div>
             <p>
               The degradation of natural ecosystems, climate change, and its
               associated impacts on weather patterns, sea levels, and extreme
@@ -42,7 +40,7 @@ export function More() {
         <div className="card">
           <Lottie className="imagy" animationData={health} loop="false" />
           <div className="card__details">
-            <div className="name">Human Health and Well-being</div>
+            <div className="name">{messages.card2}</div>
 
             <p>
               Pollution, habitat destruction, and the depletion of natural
@@ -60,7 +58,7 @@ export function More() {
           <Lottie className="imagy" animationData={fish} />
 
           <div className="card__details">
-            <div className="name">Biodiversity Loss</div>
+            <div className="name">{messages.card3}</div>
 
             <p>
               The loss of biodiversity, including the extinction of species, has
